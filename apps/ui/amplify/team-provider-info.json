@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awswordcloud-dev-32e11-authRole",
+      "UnauthRoleArn": "arn:aws:iam::279204523534:role/amplify-awswordcloud-dev-32e11-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::279204523534:role/amplify-awswordcloud-dev-32e11-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-awswordcloud-dev-32e11-deployment",
+      "UnauthRoleName": "amplify-awswordcloud-dev-32e11-unauthRole",
+      "StackName": "amplify-awswordcloud-dev-32e11",
+      "StackId": "arn:aws:cloudformation:us-west-2:279204523534:stack/amplify-awswordcloud-dev-32e11/5c1ada60-28da-11ef-8eaa-0296a6753d49",
+      "AmplifyAppId": "d1aput079tmy6z"
+    },
+    "categories": {
+      "function": {
+        "awswordcloud229cde63": {
+          "deploymentBucketName": "amplify-awswordcloud-dev-32e11-deployment",
+          "s3Key": "amplify-builds/awswordcloud229cde63-3051706e795a76324c6a-build.zip"
+        }
+      },
+      "api": {
+        "awswordcloudapi": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1aput079tmy6z",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/words": {
+      "name": "/words",
+      "lambdaFunction": "awswordcloud229cde63",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
