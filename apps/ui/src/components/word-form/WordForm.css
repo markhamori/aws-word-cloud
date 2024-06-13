@@ -1,40 +1,96 @@
 .box {
-    position: absolute;
-    bottom: 0;
-      padding: 30px 100px;
-  }
+  position: absolute;
+  bottom: 0;
+  padding: 50px 100px;
+}
+
+.box .btn {
+  font-weight: 200;
+  letter-spacing: 1px;
+  width: 100%;
+}
   
-  .input-container {
-      position:relative;
-      margin-bottom:25px;
-  }
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
   
-  .input-container label {
-      position:absolute;
-      top:0px;
-      left:0px;
-      font-size:16px;
-      color:#fff;	
-    pointer-events:none;
-      transition: all 0.5s ease-in-out;
-  }
-  .input-container input { 
-    border:0;
-    border-bottom:1px solid #555;  
-    background:transparent;
-    width:100%;
-    padding:8px 0 5px 0;
-    font-size:16px;
-    color:#fff;
-  }
-  .input-container input:focus { 
-   border:none;	
-   outline:none;
-   border-bottom:1px solid #e74c3c;	
-  }
+.input-container label {
+  position:absolute;
+  top:0px;
+  left:0px;
+  font-size:16px;
+  color:#fff;	
+  pointer-events:none;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container input { 
+  border:0;
+  border-bottom: 1px solid #444;  
+  background: transparent;
+  width: 100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.input-container input:focus { 
+  border:none;	
+  outline:none;
+  border-bottom:1px solid #646cff;	
+}
   
-  .input-container input:focus ~ label,
-  .input-container input:valid ~ label {
-      top:-12px;
-      font-size:12px;
-  }
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 10px;
+}
+
+.snackbar {
+  position: absolute;
+  top: 1.5rem;
+  text-transform: uppercase;
+  right: 2rem;
+  width: 350px;
+  height: 25px;
+  background-color: #333;
+  color: #7f7f7f; 
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px;
+  z-index: 1;
+}
+
+.snackbar.show {
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.snackbar.success {
+  border-left: 5px solid #0F5132;
+}
+
+.snackbar.fail {
+  border-left: 5px solid #B22222;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
